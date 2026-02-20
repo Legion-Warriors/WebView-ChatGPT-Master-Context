@@ -32,15 +32,16 @@ Build a high-reach, engineering-grade content series (LinkedIn/Twitter/Medium) f
 - WebView initialization time
 
 ## Strategic Structure Finalized
-The conversation shaped this into arc-based sequencing:
-1. Foundations (engine model, init, WebView vs WebKit, Perfetto init timeline)
-2. Lifecycle/render order and script timing
-3. Network/resource interception (`shouldInterceptRequest`, thread model, WebAssetLoader)
-4. JS bridge + messaging/threading model
-5. Advanced execution isolation (JS Sandbox)
-6. Performance/reliability pitfalls (including caching/pooling side effects)
+Canonical structure follows `LinkedIn_Post_Hierarchy_Conversation.md`, with
+`ANDROID_WEBVIEW_SERIES_ARCS.md` as the normalized working subset:
+1. Arc 1: Lifecycle & Session Reality (`Post 1A` to `Post 1D`)
+2. Arc 2: Resource Loading & Network Pipeline (`Post 2A` to `Post 2C`)
+3. Arc 3: JS Bridge & Execution Model (`Post 3A` to `Post 3C`)
+4. Arc 4: Lifecycle & Injection Timing (`Post 4A` to `Post 4C`)
+5. Arc 5: Performance & Engine Internals (`Post 5A` to `Post 5C`)
+6. Arc 6: Platform Strategy & Architecture (`Post 6A` to `Post 6B`)
 
-Then this was re-ordered for **hook-first viral release** (attention-first, not purely textbook order).
+Naming convention is canonicalized as `Post 1A/1B/...`, `Post 2A/2B/...`, etc.
 
 ## Key Positioning Decision
 WebView should not be framed as a narrow niche. The series should open with broad Android relevance:
@@ -53,14 +54,14 @@ WebView should not be framed as a narrow niche. The series should open with broa
 - Arc decomposition complete.
 - Hook-first release strategy defined.
 - Style constraints and platform strategy clarified.
-- **Post 1 drafted/produced** (multi-platform orientation).
-- Post 1 theme centered on WebView pre-init/pooling/caching realities and architectural trade-offs without early moral labeling.
+- **Post 1A drafted/produced** (multi-platform orientation).
+- Post 1A theme centered on WebView pre-init/pooling/caching realities and architectural trade-offs without early moral labeling.
 - **Post 1A saved for LinkedIn** at `linkedin_posts/Post 1A` ("Inside Android WebView") on February 20, 2026.
 
 ## Continuation Checkpoint (resume from here)
 If context is lost, continue with this state:
-1. Treat Post 1 and LinkedIn Post 1A as completed baseline content.
-2. Next deliverable should proceed to the next planned post in the hook-first roadmap.
+1. Treat LinkedIn Post 1A as completed baseline content.
+2. Next deliverable is Post 1B (session reset boundaries).
 3. Preserve the same editorial contract:
    - evidence-first,
    - neutral engineering tone,
@@ -75,8 +76,8 @@ Use this mini-header before generating any next post:
 SERIES STATE
 - Positioning: Engineering insights on Android WebView at production scale
 - Tone: Professional, neutral, evidence-based
-- Completed: Post 1 + Post 1A (LinkedIn saved)
-- Next: Post 2 (hook-first sequence)
+- Completed: Post 1A (LinkedIn saved)
+- Next: Post 1B (Arc 1)
 - Output needed: LinkedIn + Twitter + Medium + image prompts
 - Constraints: no myths/no fabricated claims/no dev-team shaming
 ```

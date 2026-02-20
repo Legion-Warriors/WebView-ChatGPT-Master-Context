@@ -32,15 +32,16 @@ Build a high-reach, engineering-grade content series (LinkedIn/Twitter/Medium) f
 - WebView initialization time
 
 ## Strategic Structure
-The conversation shaped this into arc-based sequencing:
-1. Foundations (engine model, init, WebView vs WebKit, Perfetto init timeline)
-2. Lifecycle/render order and script timing
-3. Network/resource interception (`shouldInterceptRequest`, thread model, WebAssetLoader)
-4. JS bridge + messaging/threading model
-5. Advanced execution isolation (JS Sandbox)
-6. Performance/reliability pitfalls (including caching/pooling side effects)
+Canonical structure is sourced from `LinkedIn_Post_Hierarchy_Conversation.md`
+and normalized in `ANDROID_WEBVIEW_SERIES_ARCS.md`:
+1. Arc 1: Lifecycle & Session Reality (`Post 1A` to `Post 1D`)
+2. Arc 2: Resource Loading & Network Pipeline (`Post 2A` to `Post 2C`)
+3. Arc 3: JS Bridge & Execution Model (`Post 3A` to `Post 3C`)
+4. Arc 4: Lifecycle & Injection Timing (`Post 4A` to `Post 4C`)
+5. Arc 5: Performance & Engine Internals (`Post 5A` to `Post 5C`)
+6. Arc 6: Platform Strategy & Architecture (`Post 6A` to `Post 6B`)
 
-Then this was re-ordered for **hook-first viral release** (attention-first, not purely textbook order).
+Naming convention is canonicalized as `Post 1A/1B/...`, `Post 2A/2B/...`, etc.
 
 ## Positioning Decision
 WebView should not be framed as a narrow niche. The series should open with broad Android relevance:

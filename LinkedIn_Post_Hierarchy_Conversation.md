@@ -2450,7 +2450,7 @@ Post Structure:
 - Curiosity boundary ending
 
 Current Progress:
-Post 1 completed
+Post 1A published
 Next: Post 1B (session clearing reality)
 
 Visual Style:
@@ -2548,7 +2548,7 @@ tone, goals, series philosophy
 
 CURRENT ARC:
 WebView pooling mini-series
-Post 1 done
+Post 1A published
 Working on Post 1B
 ```
 
@@ -2682,42 +2682,51 @@ Minimal, developer-focused visuals only.
 
 ### 6️⃣ CURRENT SERIES STRUCTURE
 
-The WebView pooling topic is a **mini-series arc**.
+Canonical roadmap (normalized):
+`Post 1A/1B/...`, `Post 2A/2B/...`, etc.
 
-#### Post 1
+This canonical block supersedes earlier draft numbering variants in this conversation log.
 
-Why teams pre-init / reuse WebViews
-Context mutation concept
-What persists internally
+#### ARC 1 — Lifecycle & Session Reality
 
-#### Post 1B
+Post 1A: Why teams consider reusing WebViews — and what persists internally
+Post 1B: WebView session reset: what clears, what persists
+Post 1C: Renderer lifecycle reality: why destroying WebView ≠ cold start
+Post 1D: Isolation vs reuse: architectural decisions for multi-flow apps
 
-Session clearing reality (cache, cookies, storage)
+#### ARC 2 — Resource Loading & Network Pipeline
 
-#### Post 1C
+Post 2A: shouldInterceptRequest deep dive
+Post 2B: Thread behavior inside shouldInterceptRequest
+Post 2C: Serving local assets with WebViewAssetLoader
 
-Renderer persistence limits
+#### ARC 3 — JS Bridge & Execution Model
 
-#### Post 1D
+Post 3A: Where @JavascriptInterface actually runs
+Post 3B: WebView PostMessage vs WebMessageListener
+Post 3C: JS thread blocking & bridge execution flow
 
-Architectural decision framework
+#### ARC 4 — Lifecycle & Injection Timing
 
-Future arcs include:
+Post 4A: Complete WebView lifecycle callback order
+Post 4B: Script injection timing & DOM readiness
+Post 4C: Dark mode & prefers-color-scheme inside WebView
 
-shouldInterceptRequest deep dive
+#### ARC 5 — Performance & Engine Internals
 
-JavaBridge threading
+Post 5A: WebView initialization cost & cold vs warm start
+Post 5B: Perfetto trace: WebView startup timeline
+Post 5C: WebView engine internals explained
 
-messaging models
+#### ARC 6 — Platform Strategy & Architecture
 
-engine internals
-
-performance traces
+Post 6A: WebView vs iOS WebKit: architectural differences
+Post 6B: JS Sandbox in Android: secure execution beyond WebView
 
 ### 7️⃣ CURRENT PROGRESS STATE
 
 ```
-Post 1 completed
+Post 1A published
 Next target: Post 1B planning & writing
 ```
 
@@ -2764,4 +2773,3 @@ into a small context block that fits safely inside token limits.
 If you want the **next level upgrade**, I can generate a second compact block:
 
 👉 **ARC CONTEXT TEMPLATE** — even shorter (~120 words) used during active writing phases so you don’t need to paste the full core template every time.
-
